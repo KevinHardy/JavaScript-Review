@@ -8,7 +8,16 @@ plusOneSum([1, 2, 3, 4]); // 14
 
 */
 
-
+var plusOneSum = function(intArr) {
+	finalSum = 0;
+	for (var i = 0; i < intArr.length; i++) {
+		intArr[i] = intArr[i] + 1;
+	}
+	for (var j = 0; j < intArr.length; j++) {
+		finalSum = intArr[j] + finalSum;
+	}
+	return finalSum;
+}
 
 /*
 
@@ -25,6 +34,7 @@ flatten([1, 2, [3, [4], 5, 6], 7]) // [1, 2, 3, 4, 5, 6, 7]
 Given an array [a1, a2, ..., aN, b1, b2, ..., bN, c1, c2, ..., cN] convert it to [a1, b1, c1, a2, b2, c2, ..., aN, bN, cN]
 
 */
+
 
 
 /*

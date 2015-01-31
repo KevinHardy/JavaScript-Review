@@ -14,10 +14,10 @@ var Animal = function(species, name, legs, color, food) {
   //code here
 var person = function(name, age, height, gender) {
   var personObj = {
-    personObj.name = name;
-    personObj.age = age;
-    personObj.height = height;
-    personObj.gender = gender;
+    name: name,
+    age: age,
+    height: height,
+    gender: gender
   };
   return personObj;
 }
