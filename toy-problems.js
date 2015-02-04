@@ -26,9 +26,19 @@ Write a function that accepts a multi dimensional array and returns a flattened 
 flatten([1, 2, [3, [4], 5, 6], 7]) // [1, 2, 3, 4, 5, 6, 7]
 
 */
+//also can look up 'reduce'
 
+var flatten = function(inpArr) {
+	var newArr = inpArr.join();
+	var flattened = [];
+	for (var i = 0; i < newArr.length; i++) {
+		if (newArr[i] !== ',') {
 
+		}
+	}
+}
 
+//also can look up 'reduce'
 /*
 
 Given an array [a1, a2, ..., aN, b1, b2, ..., bN, c1, c2, ..., cN] convert it to [a1, b1, c1, a2, b2, c2, ..., aN, bN, cN]
@@ -58,7 +68,20 @@ longestWords("I gave a present to my parents") // ["present", "parents"]
 longestWords("Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo") // ["buffalo"] or ["Buffalo"]
 
 */
-
+var longestWords = function(str) {
+	var newStr = str.split(' ');
+	var longest = [];
+	var length = 0;
+	for (var i = 0; i < newStr.length; i++) {
+		if (newStr[i].length === length) {
+			longest.push(newStr[i]);
+		} else if (newStr[i].length > length) {
+			length = newStr[i].length;
+			longest = [];
+			longest.push(newStr[i]);
+		}
+	}
+}
 
 /*
 

@@ -50,5 +50,5 @@ var getter = function() {
   //code here
 var setter = function(songObj, cb) {
     songs.push(songObj);
-    cb(getter);
+    return cb();
 }
